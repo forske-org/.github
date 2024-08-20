@@ -1,0 +1,60 @@
+.header__container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    place-items: center start;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto 1fr auto;
+    gap: 1em;
+    padding-inline: 10dvw;
+    height: 7em;
+    background: var(--primary);
+    box-shadow: var(--foreground) 0 0 1em 0;
+    color: rgb(var(--rgb-white));
+
+    img {
+        border-radius: 50%;
+    }
+
+    .header__logo {
+        width: 5em;
+        height: 5em;
+        margin-right: 3em;
+    }
+
+    .header__title {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 'name translation' 'meaning meaning';
+        padding-right: 4rem;
+
+        .header__title__name {
+            font-size: 3rem;
+            place-self: start;
+            grid-area: name;
+        }
+
+        .header__title__translation,
+        .header__title__meaning {
+            font-size: 1rem;
+        }
+
+        .header__title__translation {
+            place-self: end start;
+            grid-area: translation;
+            padding: 0.4rem 1rem;
+        }
+
+        .header__title__meaning {
+            margin-left: 4rem;
+            grid-area: meaning;
+        }
+    }
+
+    .header__navigator {
+        grid-template-columns: repeat(5, auto);
+        gap: 1.2em;
+        padding-inline: 2em;
+    }
+}

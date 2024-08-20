@@ -1,7 +1,5 @@
 ---
-title: Forske
-# showSideNavigation: "true"
-links: [] # links are => id, title
+title: Docs
 ---
 
 # {{ page.title }}
