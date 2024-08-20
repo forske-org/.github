@@ -170,9 +170,8 @@ body > main {
     grid-area: body;
     padding: 10em 2em 2em 2em;
     place-items: start center;
-}
-body > main * {
-    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, auto);
 }
 body > footer { grid-area: footer; }
 
