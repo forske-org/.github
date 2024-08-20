@@ -175,6 +175,7 @@ body {
             place-items: start center;
 
             p {
+                min-width: 100%;
                 max-width: 70ch;
             }
         }
