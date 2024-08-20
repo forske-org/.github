@@ -4,10 +4,12 @@
 
     </div>
     <div class='footer__social'>
+        {% for item in site.data.socialLinks %}
         <a target='_blank'
-            href='https://www.linkedin.com/company/forske-org'>
-            <img src='https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'
-                alt='linkedin'/>
+            href='{{ item.href }}'>
+            <img src='{{ item.img }}'
+                alt='{{ item.alt }}'/>
         </a>
+        {% endfor %}
     </div>
 </footer>
