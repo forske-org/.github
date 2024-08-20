@@ -172,7 +172,7 @@ body {
         place-items: start stretch;
 
         section#container {
-            place-items: start stretch;
+            place-items: start center;
 
             p {
                 max-width: 70ch;
