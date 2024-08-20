@@ -212,6 +212,10 @@ body {
     img {
         border-radius: 50%;
     }
+
+    a:hover {
+        cursor: pointer;
+    }
 }
 
 .header__brand {
