@@ -4,31 +4,11 @@
     <div class='footer__links'>
 
     </div>
-    <div className='footer__social'>
+    <div class='footer__social'>
         <a target='_blank'
             href='https://www.linkedin.com/company/forske-org'>
-            <img classNam
-                src={'https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'}
-                alt='linkedin'
-                width={40}
-                height={40}/>
+            <img src='https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'
+                alt='linkedin'/>
         </a>
-    </div>
-</footer>
-
-<footer class="footer footer--dark">
-    <div class="footer__lower">
-        <div class="container">
-            <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
-            <hr>
-            <ul>
-                {% for item in site.data.footerLinks %}
-                <li><a href="{{ item.route }}">{{ item.title }}</a></li>
-                {% endfor %}
-            </ul>
-            <div class="nsw-footer__info">
-                <div class="nsw-footer__copyright">Copyright © 2023</div>
-            </div>
-        </div>
     </div>
 </footer>
