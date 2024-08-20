@@ -173,10 +173,11 @@ body {
 
         section#container {
             place-items: start center;
+            gap: 1em;
 
             p {
                 width: 100%;
-                max-width: 70ch;
+                max-width: 80ch;
             }
         }
     }
