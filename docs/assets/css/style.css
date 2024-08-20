@@ -169,7 +169,7 @@ body {
     main {
         grid-area: body;
         padding: 10em 2em 2em 2em;
-        place-items: start center;
+        place-items: start stretch;
 
         section#container {
             place-items: start center;
