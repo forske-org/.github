@@ -5,7 +5,7 @@
     right: 0;
     place-items: center start;
     grid-template-rows: auto;
-    grid-template-columns: auto auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
     gap: 1em;
     padding-inline: 10dvw;
     height: 7em;
@@ -17,38 +17,43 @@
         border-radius: 50%;
     }
 
-    .header__logo {
-        width: 5em;
-        height: 5em;
-        margin-right: 3em;
-    }
+    .header__brand {
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
 
-    .header__title {
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 'name translation' 'meaning meaning';
-        padding-right: 4rem;
-
-        .header__title__name {
-            font-size: 3rem;
-            place-self: start;
-            grid-area: name;
+        .header__logo {
+            width: 5em;
+            height: 5em;
+            margin-right: 3em;
         }
-
-        .header__title__translation,
-        .header__title__meaning {
-            font-size: 1rem;
-        }
-
-        .header__title__translation {
-            place-self: end start;
-            grid-area: translation;
-            padding: 0.4rem 1rem;
-        }
-
-        .header__title__meaning {
-            margin-left: 4rem;
-            grid-area: meaning;
+    
+        .header__title {
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 'name translation' 'meaning meaning';
+            padding-right: 4rem;
+    
+            .header__title__name {
+                font-size: 3rem;
+                place-self: start;
+                grid-area: name;
+            }
+    
+            .header__title__translation,
+            .header__title__meaning {
+                font-size: 1rem;
+            }
+    
+            .header__title__translation {
+                place-self: end start;
+                grid-area: translation;
+                padding: 0.4rem 1rem;
+            }
+    
+            .header__title__meaning {
+                margin-left: 4rem;
+                grid-area: meaning;
+            }
         }
     }
 

@@ -1,9 +1,11 @@
 :root {
+    * {
+        display: grid;
+    }
 
-};
-
-footer {
-
+    script {
+        display: none !important;
+    }
 };
 
 p:has(img[title^=diagram]) {
@@ -21,13 +23,6 @@ pre.mermaid {
     &.gantt svg {
         min-width: 50% !important;
     }
-};
-
-img[title^=profile] {
-    max-width: 5em;
-    max-height: 5em;
-    border-radius: 50%;
-    padding-inline: 1em;
 };
 
 .sr-only {
