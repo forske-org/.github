@@ -286,6 +286,7 @@ body {
 
 .footer__social {
     grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, auto);
 
     img {
         width: 40px;
