@@ -279,7 +279,11 @@ body {
     padding-inline: 1em;
 }
 
-/* // .footer__links {} */
+.footer__links,
+.footer__social {
+    gap: 0.5em;
+}
+
 .footer__social {
     img {
         width: 40px;
