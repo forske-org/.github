@@ -10,10 +10,8 @@
         </div>
     </a>
     <nav class='header__navigator'>
-        <!-- <a href='/contracts'>RODE</Link>
-        <Link href='/calendar'>Calendar</Link>
-        <Link href='/meeting'>Meeting</Link>
-        <Link href='/brand-guide'>Brand Guide</Link>
-        <Link href='/code-packages'>Code Packages</Link> -->
+        {% for item in site.data.pageLinks %}
+        <a href='{{ item.url }}'><abbr title='{{ item.description }}'>{{ item.title }}</abbr></a>
+        {% endfor %}
     </nav>
 </header>
