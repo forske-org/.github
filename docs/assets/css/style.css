@@ -94,6 +94,7 @@ html {
 body {
     color: var(--foreground);
     background: var(--background);
+    font-family: 'Public Sans', Arial, sans-serif;
 }
 
 /* // Typography */
