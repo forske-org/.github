@@ -111,7 +111,7 @@ span[class^=material-symbols-] {
 }
 
 :root {
-    font-size: calc(12px + 1dvh);
+    font-size: calc(8px + 1dvh);
 }
 
 h1, h2, h3, h4 { font-weight: 600; }
