@@ -4,3 +4,6 @@
 - title: SDA
   description: Secure Data Access
   url: https://sda.docs.forske.org
+- title: CDMD
+  description: Common Data Model Definitions
+  url: https://cdmd.docs.forske.org
