@@ -286,3 +286,7 @@ body {
         height: 40px;
     }
 }
+
+abbr {
+    text-decoration: none;
+}
